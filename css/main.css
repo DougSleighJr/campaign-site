@@ -1,0 +1,103 @@
+/* Base Styles */
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.header-container {
+  text-align: center;
+}
+
+.wrapper {
+  padding-bottom: 10%;
+}
+
+.title {
+  margin-bottom: 15px;
+  background: url(../images/titleBackground.jpg) no-repeat;
+  background-size: cover;
+  padding: 10% 15%;
+}
+
+.title h1,
+.title h3 {
+    margin: 0;
+    padding: 5px;
+    font-family: 'Sofia', cursive;
+    color: red;
+    text-shadow: 3px 5px 5px black;
+}
+
+.title h1 {
+  font-weight: bold;
+  font-size: 2.0em;
+}
+
+.title h3 {
+  font-size: 1.0em;
+}
+
+nav {
+  width: 90%;
+  margin: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    background: rgb(96, 68, 209);
+    padding: 5px 0;
+    margin-bottom: 10px;
+    display: block;
+    color: white;
+}
+
+.main-wrapper {
+  width: 95%;
+  margin: auto;
+}
+
+.meet-leslie {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.portrait {
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+  border: 5px solid rgb(96, 68, 209);
+
+}
+
+/* Pseudo Classes*/
+
+a:hover {
+  background: rgb(43, 5, 197)
+}
+
+
+/* Clear Fix */
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
