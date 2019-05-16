@@ -1,4 +1,4 @@
-/* Base Styles */
+/****** Base Styles ********/
 
 html {
   box-sizing: border-box;
@@ -13,7 +13,7 @@ html {
 }
 
 .wrapper {
-  padding-bottom: 10%;
+  padding-bottom: 3%;
 }
 
 .title {
@@ -34,11 +34,11 @@ html {
 
 .title h1 {
   font-weight: bold;
-  font-size: 2.0em;
+  font-size: 2.5em;
 }
 
 .title h3 {
-  font-size: 1.0em;
+  font-size: 1.5em;
 }
 
 nav {
@@ -61,14 +61,21 @@ nav a {
     color: white;
 }
 
+.t-border {
+  border-top: 2px solid rgb(96, 68, 209)
+}
+
 .main-wrapper {
   width: 95%;
   margin: auto;
+  text-align: center;
 }
 
-.meet-leslie {
-  text-align: center;
-  font-size: 1.5em;
+.main-title {
+  font-size: 2em;
+  font-family: "Arial Black", Gadget, sans-serif;
+  color: red;
+  text-shadow: 5px 3px 15px black;
 }
 
 .portrait {
@@ -76,17 +83,127 @@ nav a {
   display: block;
   margin: auto;
   border: 5px solid rgb(96, 68, 209);
-
+  box-shadow: 3px 3px 5px 6px rgb(0, 0, 0, 0.4);
 }
 
-/* Pseudo Classes*/
+.kids-portrait {
+  width: 100%;
+  height: auto;
+  border-radius: 10% 20%;
+  border: 5px solid rgb(96, 68, 209);
+  box-shadow: 3px 3px 5px 6px rgb(0, 0, 0, 0.4);
+}
+
+.hidden-text {
+  display: none;
+}
+
+.footer {
+  background-color: rgb(114, 114, 122);
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 25px;
+}
+
+/*************** Pseudo Classes ***************/
 
 a:hover {
   background: rgb(43, 5, 197)
 }
 
+/*************** Media Queries ****************/
 
-/* Clear Fix */
+@media only screen and (min-width: 420px) {
+  nav ul {
+    max-width: 650px;
+    margin: auto;
+  }
+  
+  nav li {
+    display: inline-block;
+    width: 32%;
+  }
+
+  nav a {
+    padding: 8% 3%;
+    font-size: 1.15em;
+  }
+
+  .photo-container img {
+    display: block;
+    margin: auto;
+  }
+
+  .kids-portrait {
+    max-width: 450px;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .main-wrapper {
+    max-width: 475px;
+  }
+} 
+
+@media only screen and (min-width: 700px) {
+  .main-wrapper {
+    max-width: 85%;
+  }
+
+  .title h1 {
+    font-size: 3.5em;
+  }
+
+  .title h3 {
+    font-size: 2.5em;
+  }
+
+  .main-title {
+    font-size: 3em;
+  }
+
+  .hidden-700 {
+    float: left;
+    width: 48%
+  }
+
+  .portrait {
+    width: 75%;
+  }
+
+  .kids-portrait {
+    max-width: 350px;
+  }
+
+  .hidden-text {
+    display: block;
+    font-size: 1.5em;
+  }
+
+  .main-wrapper section {
+    float: right;
+    width: 48%;
+  }
+
+  .photo-container img {
+    display: inline-block;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  nav ul {
+    max-width: 90%;
+
+  }
+  
+  nav li {
+    margin: 2%;
+    width: 25%;
+  }
+}
+ 
+
+/********** Clear Fix ************/
 
 .clearfix:before,
 .clearfix:after {
