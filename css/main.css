@@ -17,6 +17,8 @@ body {
 img {
   margin: 0;
   padding: 0;
+  width: 100%;
+  height: auto;
 }
 
 .header-container {
@@ -117,9 +119,7 @@ nav a {
   box-shadow: 3px 3px 5px 6px rgb(0, 0, 0, 0.4);
 }
 
-.help-img {
-  width: 100%;
-  height: auto;
+.support-leslie-main img {
   border-radius: 25%;
   border: 5px solid rgb(96, 68, 209);
   box-shadow: 3px 3px 5px 6px rgb(0, 0, 0, 0.4);
