@@ -19,6 +19,9 @@ img {
 
 .wrapper {
   padding-bottom: 3%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: auto;
 }
 
 .title {
@@ -26,6 +29,9 @@ img {
   background: url(../images/titleBackground.jpg) no-repeat;
   background-size: cover;
   padding: 10% 15%;
+  display: flex;
+  flex-direction: column;
+
 }
 
 .title h1,
@@ -53,8 +59,10 @@ nav {
 
 nav ul {
     list-style-type: none;
-    margin: 0;
+    margin: auto;
     padding: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 nav a {
@@ -64,6 +72,10 @@ nav a {
     margin-bottom: 10px;
     display: block;
     color: white;
+}
+
+.home-button {
+  order: -1;
 }
 
 .t-border {
@@ -121,12 +133,12 @@ a:hover {
 @media only screen and (min-width: 420px) {
   nav ul {
     max-width: 650px;
-    margin: auto;
+    flex-direction: row;
+    justify-content: space-around;
   }
   
   nav li {
-    display: inline-block;
-    width: 32%;
+   width: 32%;
   }
 
   nav a {
@@ -153,6 +165,9 @@ a:hover {
 @media only screen and (min-width: 700px) {
   .main-wrapper {
     max-width: 85%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .title h1 {
@@ -165,11 +180,14 @@ a:hover {
 
   .main-title {
     font-size: 3em;
+    margin: auto;
+    padding: 20px 0px;
+    flex: 1 100%;
   }
 
   .hidden-700 {
-    float: left;
-    width: 48%
+    flex: 1.5 50%;
+    align-self: center;
   }
 
   .portrait {
@@ -186,8 +204,8 @@ a:hover {
   }
 
   .main-wrapper section {
-    float: right;
-    width: 48%;
+    flex: 1 40%;
+    margin-left: 2%;
   }
 
   .photo-container img {
