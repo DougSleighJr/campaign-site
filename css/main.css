@@ -8,6 +8,12 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 img {
   margin: 0;
   padding: 0;
@@ -111,6 +117,14 @@ nav a {
   box-shadow: 3px 3px 5px 6px rgb(0, 0, 0, 0.4);
 }
 
+.help-img {
+  width: 100%;
+  height: auto;
+  border-radius: 25%;
+  border: 5px solid rgb(96, 68, 209);
+  box-shadow: 3px 3px 5px 6px rgb(0, 0, 0, 0.4);
+}
+
 .hidden-text {
   display: none;
 }
@@ -119,7 +133,7 @@ nav a {
   background-color: rgb(114, 114, 122);
   text-align: center;
   padding: 15px 0;
-  margin-top: 25px;
+  flex: 1;
 }
 
 /*************** Pseudo Classes ***************/
