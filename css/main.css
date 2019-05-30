@@ -334,12 +334,14 @@ a:hover {
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
+    justify-content: space-around;
   }
 
   .support-header img {
     max-height: 250px;
     margin-right: 20px;
+    max-width: 320px;
   }
 
   .support-header p {
@@ -351,6 +353,7 @@ a:hover {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-around;
+    padding-top: 25px;
   }
 
   .support-col-flex div {
@@ -370,6 +373,11 @@ a:hover {
     margin: 2%;
     width: 25%;
   }
+
+  .support-header p {
+    font-size: 2em;
+  }
+
 }
  
 
