@@ -234,6 +234,11 @@ button {
   margin-bottom: 10px;
 }
 
+.col-images {
+  width: 75%;
+  cursor: pointer;
+}
+
 
 /*************** Pseudo Classes ***************/
 
@@ -354,6 +359,7 @@ a:hover {
     flex-wrap: nowrap;
     justify-content: space-around;
     padding-top: 25px;
+    margin-bottom: 20px;
   }
 
   .support-col-flex div {
