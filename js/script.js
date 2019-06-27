@@ -19,7 +19,6 @@ $('.col-images').on('click', function() {
     $(this).next().slideDown();
 });
 
-// $('col-images').on('mousover').css('cursor', 'pointer');
 
 
 

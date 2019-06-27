@@ -1,4 +1,4 @@
-/****** Base Styles ********/
+/****** Universal Base Styles ********/
 
 html {
   box-sizing: border-box;
@@ -21,11 +21,12 @@ img {
   height: auto;
 }
 
+/********* Universal Header Styles **********/
 .header-container {
   text-align: center;
 }
 
-.wrapper {
+.header-wrapper {
   padding-bottom: 3%;
   display: flex;
   flex-direction: column;
@@ -81,11 +82,12 @@ nav a {
     display: block;
     color: white;
 }
-
+/* Thise places the Home button at the from of the row on each page */
 .home-button {
   order: -1;
 }
 
+/* Main Content Styles */
 .t-border {
   border-top: 2px solid rgb(96, 68, 209)
 }
@@ -103,6 +105,8 @@ nav a {
   text-shadow: 5px 3px 15px black;
 }
 
+/* Index.html Styles */
+/* Circle portrait of Les Home page */
 .portrait {
   border-radius: 50%;
   display: block;
@@ -119,24 +123,11 @@ nav a {
   box-shadow: 3px 3px 5px 6px rgb(0, 0, 0, 0.4);
 }
 
-.support-leslie-main img {
-  border-radius: 25%;
-  border: 5px solid rgb(96, 68, 209);
-  box-shadow: 3px 3px 5px 6px rgb(0, 0, 0, 0.4);
-}
-
 .hidden-text {
   display: none;
 }
 
-.footer {
-  background-color: rgb(114, 114, 122);
-  text-align: center;
-  padding: 15px 0;
-  flex: 1;
-}
-
-/*************** Form Styles *****************/
+/*************** SupportForm.html Styles *****************/
 body form {
   font-family: 'Nunito', sans-serif;
   color: #384047;
@@ -234,11 +225,31 @@ button {
   margin-bottom: 10px;
 }
 
+/************** SupportLeslie.html Styles ********8*/
 .col-images {
   width: 75%;
   cursor: pointer;
+  margin-bottom: 10px;
 }
 
+.support-leslie-main img {
+  border-radius: 25%;
+  border: 5px solid rgb(96, 68, 209);
+  box-shadow: 3px 3px 5px 6px rgb(0, 0, 0, 0.4);
+}
+
+.modal .close {
+  width: auto;
+}
+
+/*********** Footer Styles ****************/
+.footer {
+  background-color: rgb(114, 114, 122);
+  text-align: center;
+  padding: 15px 0;
+  flex: 1;
+  margin-top: 15px;
+}
 
 /*************** Pseudo Classes ***************/
 
